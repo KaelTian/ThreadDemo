@@ -5,32 +5,22 @@ namespace ThreadDemo
 {
     class Program
     {
-        static readonly int loopCount = 1000;
+        static Thread thread1, thread2;
         static void Main(string[] args)
         {
-            //Thread.CurrentThread.Name = "Main Thread ... ";
-            Thread t = new Thread(ThreadY);
-            t.Name = "Y thread";
-            t.Start();
-            t.Join();
-            // Console.WriteLine(Thread.CurrentThread.Name);
-            //for (var i = 0; i < loopCount; i++)
-            //{
-            //    Console.Write("X");
-            //}
-            Console.WriteLine("Thread t has ended!");
-            Console.Read();
+            thread1 = new Thread(ThreadProc);
+            thread1.Name = "Thread1";
+            thread1.Start();
+
+            thread2 = new Thread(ThreadProc);
+            thread2.Name = "Thread2";
+            thread1.Start();
         }
 
-
-
-        static void ThreadY()
+        static void ThreadProc()
         {
-            //Console.WriteLine(Thread.CurrentThread.Name);
-            for (var i = 0; i < loopCount; i++)
-            {
-                Console.Write("Y");
-            }
+
         }
+
     }
 }
