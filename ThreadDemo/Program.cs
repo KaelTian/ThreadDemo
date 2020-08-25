@@ -18,7 +18,7 @@ namespace ThreadDemo
             //{
             //    Console.Write("X");
             //}
-            Console.WriteLine("Thread t has ended!");
+            Console.WriteLine("Main Thread t has ended!");
             Console.Read();
         }
 
