@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.30204.135
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34202.233
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThreadDemo", "ThreadDemo\ThreadDemo.csproj", "{66197348-202E-46BC-B06F-6A18D019A431}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThreadDemo.Core", "ThreadDemo.Core\ThreadDemo.Core.csproj", "{83E86949-2C71-421B-BFFB-67C655E00826}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{66197348-202E-46BC-B06F-6A18D019A431}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{66197348-202E-46BC-B06F-6A18D019A431}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{66197348-202E-46BC-B06F-6A18D019A431}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83E86949-2C71-421B-BFFB-67C655E00826}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83E86949-2C71-421B-BFFB-67C655E00826}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83E86949-2C71-421B-BFFB-67C655E00826}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83E86949-2C71-421B-BFFB-67C655E00826}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
